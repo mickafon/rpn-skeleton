@@ -8,7 +8,8 @@ import java.util.stream.Stream;
 
 public class CLI {
     public static final void main(String[] args) {
-        String expression = Stream.of(args).collect(Collectors.joining(" "));
+        //String expression = Stream.of(args).collect(Collectors.joining(" "));
+        String expression = "2 3 5 + +";
         System.out.println("About to evaluate '" + expression + "'");
         double result = evaluate(expression);
         System.out.println("> " + result);
@@ -23,9 +24,12 @@ public class CLI {
 
         double tmp = 0.0;
         int posPoint = 0;
+        if (isNumeric(expression)){
+            return Double.parseDouble(expression);
+        }
         for(int i = 0; i < expression.length(); i++){
             char carac = expression.charAt(i);
-            if (carac == '.'){
+            if (carac == '.' || carac == ','){
                 posPoint = i;
                 continue;
             }
@@ -44,6 +48,7 @@ public class CLI {
                         tmp = calculate(stack.peek(), tmp, carac);
                         stack.pop();
                         stack.push(tmp);
+                        tmp = 0;
                         continue;
                     }
                 }
@@ -70,5 +75,17 @@ public class CLI {
                 return nb1 / nb2;
         }
         return 0;
+    }
+
+    private static boolean isNumeric(String expression){
+        try
+        {
+            double num = Double.parseDouble(expression);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
     }
 }
