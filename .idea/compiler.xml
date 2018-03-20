@@ -9,7 +9,7 @@
         <module name="esgi-rpn" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="9">
+    <bytecodeTargetLevel>
       <module name="esgi-rpn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
