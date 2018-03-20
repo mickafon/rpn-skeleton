@@ -23,9 +23,12 @@ public class CLI {
 
         double tmp = 0.0;
         int posPoint = 0;
+        if (isNumeric(expression)){
+            return Double.parseDouble(expression);
+        }
         for(int i = 0; i < expression.length(); i++){
             char carac = expression.charAt(i);
-            if (carac == '.'){
+            if (carac == '.' || carac == ','){
                 posPoint = i;
                 continue;
             }
@@ -44,6 +47,7 @@ public class CLI {
                         tmp = calculate(stack.peek(), tmp, carac);
                         stack.pop();
                         stack.push(tmp);
+                        tmp = 0;
                         continue;
                     }
                 }
@@ -70,5 +74,17 @@ public class CLI {
                 return nb1 / nb2;
         }
         return 0;
+    }
+
+    private static boolean isNumeric(String expression){
+        try
+        {
+            double num = Double.parseDouble(expression);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
     }
 }
