@@ -10,11 +10,37 @@ public class CLI {
 
         String expression = Stream.of(args).collect(Collectors.joining(" "));
         System.out.println("About to evaluate '" + expression + "'");
-        String result = evaluate(expression);
+        String result = old_evaluate(expression); //modify this line to choose correct function
         System.out.println("> " + result);
     }
 
-    static String evaluate(String expression) {
+    static long evaluate(String input){
+
+        if( ( input instanceof String ) &&
+            ( !input.isEmpty() ) ) {
+
+            String [] content = ( new Token() ).analyseAndTransformExpression( input );
+
+            if( content.length > 0 ) {
+
+                long result = (new Operation()).calculateFromExpressionAnalyzed(content);
+
+                return result;
+            }
+        }
+
+        return 0l;
+
+        // token on input : split by space \s+ in array
+
+        // array check content : only int / long AND known operators : delete others
+
+        // array : treat expression stack and operator list
+    }
+
+
+
+    static String old_evaluate(String expression) {
 
         if (    expression == null
              || expression == "" ){
@@ -27,12 +53,12 @@ public class CLI {
         String tmp   = "";
         int posPoint = 0;
 
-        if( isNumeric( expression ) ) {
+        if( isNumeric( expression ) ) { // token expression
 
             return expression;
         }
 
-        for( int i = 0; i < expression.length(); i++ ) {
+        for( int i = 0; i < expression.length(); i++ ) { // treat expression
 
             char carac = expression.charAt(i);
 
