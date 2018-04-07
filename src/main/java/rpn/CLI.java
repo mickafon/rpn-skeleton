@@ -12,7 +12,7 @@ public class CLI {
 
         String expression = Stream.of(args).collect(Collectors.joining(" "));
         System.out.println("About to evaluate '" + expression + "'");
-        String result = old_evaluate(expression); //modify this line to choose correct function
+        double result = evaluate(expression);
         System.out.println("> " + result);
     }
 
@@ -32,8 +32,7 @@ public class CLI {
         return 0d;
     }
 
-
-
+    /*
     static String old_evaluate(String expression) {
 
         if (    expression == null
@@ -156,4 +155,5 @@ public class CLI {
         }
         return true;
     }
+    */
 }

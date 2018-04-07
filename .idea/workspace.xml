@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceaba7e2-feb6-456b-98f5-c0acc1c3287c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rpn/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpn/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rpn/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpn/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rpn/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpn/Operator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rpn/Operators.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rpn/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpn/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +13,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="CLI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rpn/CLI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2295">
+              <caret line="157" column="6" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,8 +44,8 @@
         <option value="$PROJECT_DIR$/src/main/java/rpn/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Operator.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Operation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rpn/CLI.java" />
         <option value="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rpn/CLI.java" />
       </list>
     </option>
   </component>
@@ -71,7 +75,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,7 +113,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,26 +212,27 @@
       <workItem from="1522921718102" duration="3438000" />
       <workItem from="1522931867771" duration="3898000" />
       <workItem from="1523109855282" duration="8346000" />
+      <workItem from="1523135569889" duration="55000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15682000" />
+    <option name="totallyTimeSpent" value="15737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="38" width="1629" height="865" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32996207" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -237,14 +242,15 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32996207" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,13 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/CLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
@@ -404,6 +403,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/CLI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="157" column="6" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="6" />
         </state>
       </provider>
     </entry>
