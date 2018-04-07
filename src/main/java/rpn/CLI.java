@@ -1,5 +1,7 @@
 package rpn;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -14,28 +16,20 @@ public class CLI {
         System.out.println("> " + result);
     }
 
-    static long evaluate(String input){
+    static double evaluate(String input){
 
         if( ( input instanceof String ) &&
             ( !input.isEmpty() ) ) {
 
-            String [] content = ( new Token() ).analyseAndTransformExpression( input );
+            List<String> content = Token.refineExpression( input );
 
-            if( content.length > 0 ) {
+            if( content.size() > 0 ) {
 
-                long result = (new Operation()).calculateFromExpressionAnalyzed(content);
-
-                return result;
+                return Operation.calculateFromRefinedExpression(content);
             }
         }
 
-        return 0l;
-
-        // token on input : split by space \s+ in array
-
-        // array check content : only int / long AND known operators : delete others
-
-        // array : treat expression stack and operator list
+        return 0d;
     }
 
 

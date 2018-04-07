@@ -1,19 +1,37 @@
 package rpn;
 
+import java.util.List;
+
 public class Token {
 
 
-    public static String[] analyseAndTransformExpression(String expression) {
+    public static List<String>  refineExpression(String expression) {
 
-        String [] analyzedExpression = expression.split("/\\s+/g");
+        String [] roughExpression = expression.split("/\\s+/g");
+        List<String> refinedExpression = null;
 
-        for( String value : analyzedExpression ) {
-            // value is double
-            //value is in known operator list
+
+        for( String value : roughExpression ) {
+
+            if( isDouble(value) ||
+                Operator.isKnowSymbol(value) ){
+
+                refinedExpression.add(value);
+            }
         }
 
+        return refinedExpression;
+    }
 
-        return null;
+    /** vely vely ougly code */
+    public static boolean isDouble(String value ){
+        try {
+            Double.parseDouble(value);
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
     }
 
 }

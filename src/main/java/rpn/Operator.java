@@ -1,46 +1,88 @@
 package rpn;
 
-public class Operator {
+import java.util.HashMap;
+import java.util.Map;
 
-    private String operator;
+public enum Operator {
 
-    public Operator( String _operator ) {
-        this.operator = _operator;
-    }
+    /**
+     * this complex enumeration class define values and override
+     * method operate for each one
+     * */
 
-    public long calculate( long left, long right ){
+    PLUS("+") {
 
-        switch ( operator ) {
-            case "+" :
-                return this.add(left,right);
-            case "-":
-                return this.substract(left,right);
-            case "*" :
-                return this.multiply(left,right);
-            case "/" :
-                return this.divide(left,right);
+        @Override
+        public double operate( double left, double right){
+            return left + right;
         }
-        return 0l;
+    },
+    MINUS("-") {
+
+        @Override
+        public double operate( double left, double right){
+            return left - right;
+        }
+    },
+    TIMES("*") {
+
+        @Override
+        public double operate( double left, double right){
+            return left * right;
+        }
+    },
+    DIVIDE("/") {
+
+        @Override
+        public double operate( double left, double right){
+            if( right != 0)
+                return left / right;
+            else throw new ArithmeticException("You CANNOT divide by zero mofo");
+        }
+    };
+
+    final String symbol;
+    static final Map symbolsMap = new HashMap();
+
+    Operator(String symbol ) {
+        this.symbol = symbol;
     }
 
-    private long add( long left, long right ){
-        return left + right;
+
+    public abstract double operate( double right, double left );
+
+    private String getSymbol(){
+        return this.symbol;
     }
 
-    private long substract( long left, long right ){
-        return left - right;
+    /** self generated map, which contains Operators instantiations
+     *  with corresponding symbol. This permit to reach a known operator by symbol
+     * */
+    static {
+        for (Operator operator : values()){
+            symbolsMap.put(operator.getSymbol(), operator);
+        }
     }
 
-    private long multiply( long left, long right ){
-        return left * right;
+    /**
+     * this return value from enumeration list corresponding to the
+     * symbol in parameter
+     * */
+    public static Operator fromSymbol(String symbol ){
+        return (Operator) symbolsMap.get( symbol);
     }
 
-    private long divide( long left, long right ) {
-
-        if( right != 0 )
-            return left / right;
-
-        else throw  new ArithmeticException("You CANNOT divide by 0 mf");
+    /**
+     * verify if symbol in parameter is known in this list or not
+     * */
+    public static boolean isKnowSymbol(String symbol){
+        if(fromSymbol(symbol) != null) return true;
+        return false;
     }
 
+    public static void main(String[] args) {
+        Operator operator = Operator.fromSymbol("-");
+
+        operator.operate(1.1,2.2);
+    }
 }

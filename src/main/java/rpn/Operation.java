@@ -1,26 +1,64 @@
 package rpn;
 
+import java.util.List;
 import java.util.Stack;
 
 public class Operation {
 
-    public static long calculateFromExpressionAnalyzed(String[] content) {
+    /** at this level, expression content is refined and clean
+     *  it mays only contain double values or known operators
+     */
 
-        Stack stack = new Stack();
-        int increment;
+    public static double calculateFromRefinedExpression( List<String> refinedExpression ) {
 
-        for(increment = 0; increment < content.length; increment++ ) {
+        Stack<Double> stack = new Stack<>();
+        double result = 0d;
 
-            if( (Double) Double.parseDouble(content[increment]) instanceof Double ){
-                Double number = Double.parseDouble(content[increment]);
-                stack.push(number);
+        for(String value : refinedExpression) {
+
+            if(Token.isDouble(value)){
+
+                stack.push(Double.parseDouble(value));
             }
-            else{
+            else if(stack.size() > 1) {
 
+                Operator operator = Operator.fromSymbol(value);
+
+                double left = stack.peek();
+                stack.pop();
+
+                double right = stack.peek();
+                stack.pop();
+
+                double step = operator.operate(left, right);
+
+                stack.push(step);
             }
         }
 
-        return 0l;
+        /**
+         * normal situation, operand and operator number balanced
+         * */
+        if( stack.size() == 1 ) {
+            result = stack.peek();
+        }
+
+        /**
+         * unnatural situation, operand and operator number not balanced
+         * */
+        else if( stack.size() > 1 ) {
+            String exception = "";
+
+            while( stack.size() > 0 ) {
+
+                exception = stack.peek().toString();
+                stack.pop();
+            }
+
+            throw new ArithmeticException(exception);
+        }
+
+        return result;
     }
 
 }
