@@ -3,6 +3,8 @@ package rpn;
 import java.util.ArrayList;
 import java.util.Stack;
 
+import static java.lang.Math.round;
+
 public class Operation {
 
     /** at this level, expression content is refined and clean
@@ -21,7 +23,6 @@ public class Operation {
         for(String value : refinedExpression) {
 
             if(Token.isDouble(value)){
-
                 stack.push(Double.parseDouble(value));
             }
             else if(stack.size() > 1) {
@@ -62,7 +63,7 @@ public class Operation {
             throw new ArithmeticException(exception);
         }
 
-        return result;
+        return round( result * 100.0 ) / 100.0 ;
     }
 
 }

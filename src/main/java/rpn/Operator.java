@@ -81,9 +81,4 @@ public enum Operator {
         return false;
     }
 
-    public static void main(String[] args) {
-        Operator operator = Operator.fromSymbol("-");
-
-        operator.operate(1.1,2.2);
-    }
 }

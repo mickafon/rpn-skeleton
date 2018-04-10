@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/rpn/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpn/Operation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rpn/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpn/Operator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rpn/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpn/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CLI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CLI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpn/CLI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="28" selection-start-line="28" selection-end-line="29" />
+            <state relative-caret-position="345">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,8 +45,8 @@
       <file leaf-file-name="CLITest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rpn/CLITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="315">
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#219#220#0" expanded="true" />
@@ -82,8 +81,8 @@
       <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="212">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,8 +93,8 @@
       <file leaf-file-name="Operator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="667">
+              <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operation.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Operation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Operation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="348">
+              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,6 +124,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>long</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -133,11 +137,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/rpn/operation/MyPlus.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Operators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rpn/Operator.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Token.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rpn/Operation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rpn/Operator.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/CLI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rpn/Operation.java" />
       </list>
     </option>
   </component>
@@ -253,14 +257,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CLITest">
+  <component name="RunManager" selected="JUnit.CLITest.should_clean_and_calculate_when_fancy_expression">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="Operation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rpn.Operation" />
+      <module name="esgi-rpn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rpn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="CLITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CLITest.should_clean_and_calculate_when_fancy_expression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="esgi-rpn" />
       <extension name="coverage">
         <pattern>
@@ -272,30 +287,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="rpn" />
       <option name="MAIN_CLASS_NAME" value="rpn.CLITest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CLITest.should_evaluate_more_complex_addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="esgi-rpn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rpn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rpn" />
-      <option name="MAIN_CLASS_NAME" value="rpn.CLITest" />
-      <option name="METHOD_NAME" value="should_evaluate_more_complex_addition" />
+      <option name="METHOD_NAME" value="should_clean_and_calculate_when_fancy_expression" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -306,7 +298,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CLITest.should_evaluate_multiple_digits_constant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CLITest.should_evaluate_operation_with_negatives" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="esgi-rpn" />
       <extension name="coverage">
         <pattern>
@@ -318,7 +310,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="rpn" />
       <option name="MAIN_CLASS_NAME" value="rpn.CLITest" />
-      <option name="METHOD_NAME" value="should_evaluate_multiple_digits_constant" />
+      <option name="METHOD_NAME" value="should_evaluate_operation_with_negatives" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -329,7 +321,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CLITest.should_evaluate_simple_addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CLITest.should_evaluate_operation_with_negatives_and_decimals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="esgi-rpn" />
       <extension name="coverage">
         <pattern>
@@ -341,7 +333,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="rpn" />
       <option name="MAIN_CLASS_NAME" value="rpn.CLITest" />
-      <option name="METHOD_NAME" value="should_evaluate_simple_addition" />
+      <option name="METHOD_NAME" value="should_evaluate_operation_with_negatives_and_decimals" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -352,7 +344,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CLITest.should_evaluate_single_digit_constant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CLITest.should_ignore_when_operators_exceed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="esgi-rpn" />
       <extension name="coverage">
         <pattern>
@@ -364,7 +356,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="rpn" />
       <option name="MAIN_CLASS_NAME" value="rpn.CLITest" />
-      <option name="METHOD_NAME" value="should_evaluate_single_digit_constant" />
+      <option name="METHOD_NAME" value="should_ignore_when_operators_exceed" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -427,19 +419,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.CLITest.should_evaluate_more_complex_addition" />
-      <item itemvalue="JUnit.CLITest.should_evaluate_simple_addition" />
-      <item itemvalue="JUnit.CLITest.should_evaluate_multiple_digits_constant" />
-      <item itemvalue="JUnit.CLITest.should_evaluate_single_digit_constant" />
-      <item itemvalue="JUnit.CLITest" />
+      <item itemvalue="Application.Operation" />
+      <item itemvalue="JUnit.CLITest.should_evaluate_operation_with_negatives" />
+      <item itemvalue="JUnit.CLITest.should_evaluate_operation_with_negatives_and_decimals" />
+      <item itemvalue="JUnit.CLITest.should_ignore_when_operators_exceed" />
+      <item itemvalue="JUnit.CLITest.should_clean_and_calculate_when_fancy_expression" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CLITest" />
-        <item itemvalue="JUnit.CLITest.should_evaluate_multiple_digits_constant" />
-        <item itemvalue="JUnit.CLITest.should_evaluate_single_digit_constant" />
-        <item itemvalue="JUnit.CLITest.should_evaluate_simple_addition" />
-        <item itemvalue="JUnit.CLITest.should_evaluate_more_complex_addition" />
+        <item itemvalue="JUnit.CLITest.should_clean_and_calculate_when_fancy_expression" />
+        <item itemvalue="JUnit.CLITest.should_ignore_when_operators_exceed" />
+        <item itemvalue="JUnit.CLITest.should_evaluate_operation_with_negatives_and_decimals" />
+        <item itemvalue="JUnit.CLITest.should_evaluate_operation_with_negatives" />
+        <item itemvalue="Application.Operation" />
       </list>
     </recent_temporary>
   </component>
@@ -458,23 +450,11 @@
       <workItem from="1523109855282" duration="8346000" />
       <workItem from="1523135569889" duration="326000" />
       <workItem from="1523261736905" duration="417000" />
-      <workItem from="1523354195355" duration="4135000" />
+      <workItem from="1523354195355" duration="6832000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CLITest_should_evaluate_simple_multiplication - 2018.04.10 at 18h 17m 49s.xml">
-      <configuration name="CLITest.should_evaluate_simple_multiplication" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLITest_should_evaluate_more_complex_soustraction - 2018.04.10 at 18h 18m 03s.xml">
-      <configuration name="CLITest.should_evaluate_more_complex_soustraction" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLITest_should_evaluate_more_complex_soustraction - 2018.04.10 at 18h 18m 06s.xml">
-      <configuration name="CLITest.should_evaluate_more_complex_soustraction" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLITest_should_evaluate_simple_soustraction - 2018.04.10 at 18h 18m 16s.xml">
-      <configuration name="CLITest.should_evaluate_simple_soustraction" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CLITest_should_evaluate_more_complex_addition - 2018.04.10 at 18h 18m 31s.xml">
       <configuration name="CLITest.should_evaluate_more_complex_addition" configurationId="JUnit" />
     </history-entry>
@@ -493,9 +473,21 @@
     <history-entry file="CLITest - 2018.04.10 at 18h 24m 55s.xml">
       <configuration name="CLITest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CLITest_should_evaluate_simple_addition - 2018.04.10 at 18h 52m 04s.xml">
+      <configuration name="CLITest.should_evaluate_simple_addition" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLITest_should_evaluate_simple_addition - 2018.04.10 at 18h 52m 25s.xml">
+      <configuration name="CLITest.should_evaluate_simple_addition" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLITest - 2018.04.10 at 19h 02m 14s.xml">
+      <configuration name="CLITest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLITest - 2018.04.10 at 19h 13m 49s.xml">
+      <configuration name="CLITest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20560000" />
+    <option name="totallyTimeSpent" value="23257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="38" width="1629" height="865" extended-state="0" />
@@ -539,7 +531,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -697,30 +689,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="212">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Operation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/CLI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="345">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -729,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rpn/CLITest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="315">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#219#220#0" expanded="true" />
@@ -761,10 +753,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/CLI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Operation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" selection-start-line="28" selection-end-line="29" />
+        <state relative-caret-position="348">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

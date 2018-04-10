@@ -37,4 +37,17 @@ public class Token {
         }
     }
 
+    /**
+     * a bit ouglyyy too
+     * */
+    public static boolean isLong(String value ){
+        try {
+            Long.parseLong(value);
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
+    }
+
 }

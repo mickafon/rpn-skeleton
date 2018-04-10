@@ -72,4 +72,24 @@ public class CLITest {
     public void should_concat_numbers_when_no_operande(){
         evaluate("7 2 - 3 4");
     }
+
+    @Test
+    public void should_evaluate_operation_with_negatives(){
+        assertThat(evaluate("10 -5 +")).isEqualTo(5.0);
+    }
+
+    @Test
+    public void should_evaluate_operation_with_negatives_and_decimals(){
+        assertThat(evaluate("10.3 -5 +")).isEqualTo(5.3);
+    }
+
+    @Test
+    public void should_ignore_when_operators_exceed(){
+        assertThat(evaluate("10.3 -5 + -")).isEqualTo(5.3);
+    }
+
+    @Test
+    public void should_clean_and_calculate_when_fancy_expression(){
+        assertThat(evaluate("10.3 -5 + aaaz    2 +")).isEqualTo(7.3);
+    }
 }
