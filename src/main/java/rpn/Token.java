@@ -1,20 +1,21 @@
 package rpn;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Token {
 
 
-    public static List<String>  refineExpression(String expression) {
+    public static ArrayList<String>  refineExpression(String expression) {
 
-        String [] roughExpression = expression.split("/\\s+/g");
-        List<String> refinedExpression = null;
-
+        String [] roughExpression = expression.split("\\s+");
+        ArrayList<String> refinedExpression = new ArrayList<>();
 
         for( String value : roughExpression ) {
 
             if( isDouble(value) ||
-                Operator.isKnowSymbol(value) ){
+                Operator.isKnowSymbol(value) ) {
 
                 refinedExpression.add(value);
             }
@@ -23,7 +24,9 @@ public class Token {
         return refinedExpression;
     }
 
-    /** vely vely ougly code */
+    /**
+     * a bit ouglyyy
+     * */
     public static boolean isDouble(String value ){
         try {
             Double.parseDouble(value);

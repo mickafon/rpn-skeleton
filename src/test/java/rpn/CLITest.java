@@ -9,62 +9,52 @@ public class CLITest {
 
     @Test
     public void should_evaluate_single_digit_constant() {
-        String expected = String.valueOf(5);
-        assertThat(evaluate("5")).isEqualTo(expected);
+        assertThat(evaluate("5")).isEqualTo(5.0);
     }
 
     @Test
     public void should_evaluate_multiple_digits_constant() {
-        String expected = String.valueOf(17);
-        assertThat(evaluate("17")).isEqualTo(expected);
+        assertThat(evaluate("17")).isEqualTo(17.0);
     }
 
     @Test
     public void should_evaluate_simple_addition() {
-        String expected = String.valueOf(22.0);
-        assertThat(evaluate("17 5 +")).isEqualTo(expected);
+        assertThat(evaluate("17 5 +")).isEqualTo(22.0);
     }
 
     @Test
     public void should_evaluate_more_complex_addition() {
-        String expected = String.valueOf(10.0);
-        assertThat(evaluate("2 3 5 + +")).isEqualTo(expected);
+        assertThat(evaluate("2 3 5 + +")).isEqualTo(10.0);
     }
 
     @Test
     public void should_evaluate_simple_soustraction() {
-        String expected = String.valueOf(12.0);
-        assertThat(evaluate("17 5 -")).isEqualTo(expected);
+        assertThat(evaluate("17 5 -")).isEqualTo(12.0);
     }
 
     @Test
     public void should_evaluate_more_complex_soustraction() {
-        String expected = String.valueOf(1.0);
-        assertThat(evaluate("10 2 7 + -")).isEqualTo(expected);
+        assertThat(evaluate("10 2 7 + -")).isEqualTo(1.0);
     }
 
     @Test
     public void should_evaluate_simple_multiplication() {
-        String expected = String.valueOf(85.0);
-        assertThat(evaluate("17 5 *")).isEqualTo(expected);
+        assertThat(evaluate("17 5 *")).isEqualTo(85.0);
     }
 
     @Test
     public void should_evaluate_more_complex_multiplication() {
-        String expected = String.valueOf(140.0);
-        assertThat(evaluate("10 2 7 * *")).isEqualTo(expected);
+        assertThat(evaluate("10 2 7 * *")).isEqualTo(140.0);
     }
 
     @Test
     public void should_evaluate_simple_division() {
-        String expected = String.valueOf(200.0);
-        assertThat(evaluate("100 5 /")).isEqualTo(expected);
+        assertThat(evaluate("100 5 /")).isEqualTo(20.0);
     }
 
     @Test
     public void should_evaluate_more_complex_division() {
-        String expected = String.valueOf(25.0);
-        assertThat(evaluate("10 2 5 / /")).isEqualTo(expected);
+        assertThat(evaluate("10 2 5 / /")).isEqualTo(25.0);
     }
 
     @Test(expected = ArithmeticException.class)
@@ -75,12 +65,11 @@ public class CLITest {
 
     @Test
     public void should_evaluate_operation_with_decimal(){
-        String expected = String.valueOf(4.0);
-        assertThat(evaluate("2.1 1.9 +")).isEqualTo(expected);
+        assertThat(evaluate("2.1 1.9 +")).isEqualTo(4.0);
     }
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void should_concat_numbers_when_no_operande(){
-        assertThat(evaluate("7 2 - 3 4")).isEqualTo("5.0 3.0 4.0 ");
+        evaluate("7 2 - 3 4");
     }
 }

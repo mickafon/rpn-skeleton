@@ -57,6 +57,7 @@ public enum Operator {
 
     /** self generated map, which contains Operators instantiations
      *  with corresponding symbol. This permit to reach a known operator by symbol
+     *  and use its operate method
      * */
     static {
         for (Operator operator : values()){

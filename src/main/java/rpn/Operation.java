@@ -1,6 +1,6 @@
 package rpn;
 
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Stack;
 
 public class Operation {
@@ -9,10 +9,14 @@ public class Operation {
      *  it mays only contain double values or known operators
      */
 
-    public static double calculateFromRefinedExpression( List<String> refinedExpression ) {
+    public static double calculateFromRefinedExpression( ArrayList<String> refinedExpression ) {
+
+        if(refinedExpression.size() == 1)
+            return Double.parseDouble(refinedExpression.get(0));
 
         Stack<Double> stack = new Stack<>();
         double result = 0d;
+
 
         for(String value : refinedExpression) {
 
@@ -24,10 +28,10 @@ public class Operation {
 
                 Operator operator = Operator.fromSymbol(value);
 
-                double left = stack.peek();
+                double right = stack.peek();
                 stack.pop();
 
-                double right = stack.peek();
+                double left = stack.peek();
                 stack.pop();
 
                 double step = operator.operate(left, right);
@@ -51,7 +55,7 @@ public class Operation {
 
             while( stack.size() > 0 ) {
 
-                exception = stack.peek().toString();
+                exception = stack.peek().toString() + " " + exception;
                 stack.pop();
             }
 
