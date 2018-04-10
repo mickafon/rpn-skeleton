@@ -1,8 +1,6 @@
 package rpn;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Token {
 
@@ -37,17 +35,5 @@ public class Token {
         }
     }
 
-    /**
-     * a bit ouglyyy too
-     * */
-    public static boolean isLong(String value ){
-        try {
-            Long.parseLong(value);
-            return true;
-        }
-        catch (Exception e){
-            return false;
-        }
-    }
 
 }
