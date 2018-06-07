@@ -1,9 +1,11 @@
-package rpn;
+package rpn.Res;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Stack;
 
+/**
+ * Operator Tool
+ */
 public enum Operator {
 
     /**

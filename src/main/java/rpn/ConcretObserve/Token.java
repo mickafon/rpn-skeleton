@@ -5,32 +5,35 @@ import rpn.Event.TokenEvent;
 import rpn.Observe.Observable;
 import rpn.Observe.Observer;
 
+/**
+ * Token Observer
+ * Token subscribe to Orchestrator, and detect its change
+ *
+ * If Orchestrator event is a TokenEvent, this operate a treatment on token event value
+ * and complete Orchestrator stack only if value is accepted
+ */
 public class Token implements Observer {
 
-    public Token(){ }
+    public Token() { }
 
     @Override
-    public void observableUpdate(Observable observable) {
-        if(observable instanceof Orchestrator){
+    public void observableUpdate( Observable observable ) {
+
+        if( observable instanceof Orchestrator ) {
+
             Orchestrator orchestrator = (Orchestrator) observable;
             IEvent event = orchestrator.getEvent();
 
-            if(event instanceof TokenEvent){
-                if(this.isDouble((String) event.getValue())){
-                    orchestrator.appendStack(Double.parseDouble((String) event.getValue()));
+            if( event instanceof TokenEvent ) {
+
+                Double value = (Double) event.getValue();
+
+                if( value != null ) {
+
+                    orchestrator.appendStack(value);
                 }
             }
         }
     }
 
-    private boolean isDouble(String value){
-        try {
-            Double.parseDouble(value);
-            return true;
-        }
-        catch (Exception exception){
-            System.out.println(exception.getMessage());
-            return false;
-        }
-    }
 }

@@ -1,18 +1,24 @@
 package rpn.Event;
 
-public class ResultEvent implements IEvent{
+/**
+ * Result Event
+ * define an event behaviour for Result
+ */
+public class ResultEvent implements IEvent {
 
-    public ResultEvent(){
+    private String value;
 
+    public ResultEvent() {
+        this.value = "";
     }
 
     @Override
-    public void setValue(String value) {
-
+    public void setValue( String value ) {
+        this.value = value;
     }
 
     @Override
     public Object getValue() {
-        return null;
+        return this.value;
     }
 }

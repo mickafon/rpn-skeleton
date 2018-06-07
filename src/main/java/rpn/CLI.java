@@ -1,44 +1,43 @@
 package rpn;
 
-import rpn.ConcretObserve.Orchestrator;
-import rpn.Event.OperationEvent;
-import rpn.Event.ResultEvent;
-import rpn.Event.TokenEvent;
+import rpn.ConcretObserve.*;
+import rpn.Event.*;
+import rpn.Res.Operator;
 
-import java.util.ArrayList;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class CLI {
+public class CLI  {
 
-    private String expression;
     private Orchestrator orchestrator;
+
+    public CLI(){
+        this.orchestrator = new Orchestrator();
+    }
+
 
     public static final void main(String[] args) {
 
         String expression = Stream.of(args).collect(Collectors.joining(" "));
         System.out.println("About to evaluate '" + expression + "'");
-        double result = evaluate(expression);
+
+        CLI cli = new CLI();
+        cli.process(expression);
+
+        double result = cli.getOrchestratorResult();
         System.out.println("> " + result);
     }
 
-    static double evaluate(String input){
+    public void process(String expression){
 
-        if( ( input instanceof String ) &&
-            ( !input.isEmpty() ) ) {
+        Operation operation = new Operation();
+        rpn.ConcretObserve.Token token = new Token();
+        ResultDisplayer resultDisplayer = new ResultDisplayer();
 
-            ArrayList<String> content = Token.refineExpression( input );
+        orchestrator.addObserver(operation);
+        orchestrator.addObserver(token);
+        orchestrator.addObserver(resultDisplayer);
 
-            if( content.size() > 0 ) {
-
-                return Operation.calculateFromRefinedExpression( content );
-            }
-        }
-
-        return 0d;
-    }
-
-    public void process(){
 
         for(String value : expression.split("\\s+")) {
 
@@ -53,4 +52,13 @@ public class CLI {
 
         orchestrator.setEvent(new ResultEvent());
     }
+
+    /**
+     * this method is defined for the cases where you need
+     * to recover final value for unit tests
+     */
+    public Double getOrchestratorResult(){
+        return this.orchestrator.getResult();
+    }
+
 }

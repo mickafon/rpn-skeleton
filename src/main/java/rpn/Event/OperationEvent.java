@@ -1,19 +1,21 @@
 package rpn.Event;
 
+import rpn.Res.Operator;
 
-import rpn.Operator;
-
-
+/**
+ * Operation Event
+ * define an event behaviour for Operation
+ */
 public class OperationEvent implements IEvent {
 
     private Operator operator;
 
-    public OperationEvent(String value){
+    public OperationEvent( String value ) {
         this.operator = Operator.fromSymbol(value);
     }
 
     @Override
-    public void setValue(String value) {
+    public void setValue( String value ) {
         this.operator = Operator.fromSymbol(value);
     }
 

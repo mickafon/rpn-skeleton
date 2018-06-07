@@ -1,5 +1,9 @@
 package rpn.Observe;
 
+/**
+ *  Observable Interface
+ *  this interface define contract to observed
+ */
 public interface Observable {
 
     void addObserver(Observer observer);

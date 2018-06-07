@@ -4,26 +4,35 @@ import rpn.Event.IEvent;
 import rpn.Event.OperationEvent;
 import rpn.Observe.Observable;
 import rpn.Observe.Observer;
-import rpn.Operator;
+import rpn.Res.Operator;
 
 import java.util.Stack;
 
-import static java.lang.Math.round;
 
+/**
+ * Operation is an Observer
+ * Operation subscribe to Orchestrator, and detect its change
+ *
+ * If Orchestrator event is a OperationEvent, this calculate from stack and from operation event value
+ * and complete Orchestrator stack
+ */
 public class Operation implements Observer {
 
     private Stack<Double> stack;
     private Operator operator;
 
     @Override
-    public void observableUpdate(Observable observable) {
-        if(observable instanceof Orchestrator){
+    public void observableUpdate( Observable observable ) {
+
+        if( observable instanceof Orchestrator ) {
+
             Orchestrator orchestrator = (Orchestrator) observable;
             IEvent event = orchestrator.getEvent();
 
-            if(event instanceof OperationEvent){
+            if( event instanceof OperationEvent ) {
+
                 this.stack = orchestrator.getStack();
-                this.operator = ((OperationEvent) event).getValue();
+                this.operator = (Operator) event.getValue();
 
                 operate();
                 orchestrator.setStack(stack);
@@ -31,27 +40,20 @@ public class Operation implements Observer {
         }
     }
 
-    private void operate(){
+    private void operate() {
 
-        double result = 0d;
+        if( this.stack.size() > 1 ) {
 
-        if(this.stack.size() > 1) {
+            double right = stack.peek();
+            stack.pop();
 
-            while(stack.size() > 0){
+            double left = stack.peek();
+            stack.pop();
 
-                double right = stack.peek();
-                stack.pop();
+            double step = operator.operate(left, right);
 
-                double left = stack.peek();
-                stack.pop();
+            stack.push(step);
 
-                double step = operator.operate(left, right);
-
-                stack.push(step);
-
-            }
         }
-
-        //return round( result * 100.0 ) / 100.0 ;
     }
 }
