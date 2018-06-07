@@ -1,10 +1,18 @@
 package rpn;
 
+import rpn.ConcretObserve.Orchestrator;
+import rpn.Event.OperationEvent;
+import rpn.Event.ResultEvent;
+import rpn.Event.TokenEvent;
+
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class CLI {
+
+    private String expression;
+    private Orchestrator orchestrator;
 
     public static final void main(String[] args) {
 
@@ -28,5 +36,21 @@ public class CLI {
         }
 
         return 0d;
+    }
+
+    public void process(){
+
+        for(String value : expression.split("\\s+")) {
+
+
+            if(Operator.isKnowSymbol(value)){
+                orchestrator.setEvent(new OperationEvent(value));
+            }
+            else {
+                orchestrator.setEvent(new TokenEvent(value));
+            }
+        }
+
+        orchestrator.setEvent(new ResultEvent());
     }
 }

@@ -1,9 +1,21 @@
 package rpn;
 
+import rpn.Event.OperationEvent;
+import rpn.Event.ResultEvent;
+import rpn.Event.TokenEvent;
+import rpn.ConcretObserve.Orchestrator;
+
 import java.util.ArrayList;
 
 public class Token {
 
+    private Orchestrator orchestrator;
+    private String expression;
+
+    public Token(String expression, Orchestrator orchestrator){
+        this.orchestrator = orchestrator;
+        this.expression = expression;
+    }
 
     public static ArrayList<String>  refineExpression(String expression) {
 
@@ -14,7 +26,6 @@ public class Token {
 
             if( isDouble(value) ||
                 Operator.isKnowSymbol(value) ) {
-
                 refinedExpression.add(value);
             }
         }
@@ -22,8 +33,9 @@ public class Token {
         return refinedExpression;
     }
 
+
     /**
-     * a bit ouglyyy
+     * well ...
      * */
     public static boolean isDouble(String value ){
         try {

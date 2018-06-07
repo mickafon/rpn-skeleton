@@ -2,6 +2,7 @@ package rpn;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
 
 public enum Operator {
 
@@ -10,28 +11,28 @@ public enum Operator {
      * method operate for each one
      * */
 
-    PLUS("+") {
+    PLUS("+"/*, new Stack<>()*/) {
 
         @Override
         public double operate( double left, double right){
             return left + right;
         }
     },
-    MINUS("-") {
+    MINUS("-"/*, new Stack<>()*/) {
 
         @Override
         public double operate( double left, double right){
             return left - right;
         }
     },
-    TIMES("*") {
+    TIMES("*"/*, new Stack<>()*/) {
 
         @Override
         public double operate( double left, double right){
             return left * right;
         }
     },
-    DIVIDE("/") {
+    DIVIDE("/"/*, new Stack<>()*/) {
 
         @Override
         public double operate( double left, double right){
@@ -42,10 +43,13 @@ public enum Operator {
     };
 
     final String symbol;
+    //final Stack<Double> stack;
+
     static final Map symbolsMap = new HashMap();
 
-    Operator(String symbol ) {
+    Operator(String symbol/*, Stack<Double> income*/) {
         this.symbol = symbol;
+        //this.stack = income;
     }
 
 
