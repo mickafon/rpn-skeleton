@@ -13,6 +13,14 @@ public class CLI  {
 
     public CLI(){
         this.orchestrator = new Orchestrator();
+
+        Operation operation = new Operation();
+        rpn.ConcretObserve.Token token = new Token();
+        ResultDisplayer resultDisplayer = new ResultDisplayer();
+
+        orchestrator.addObserver(operation);
+        orchestrator.addObserver(token);
+        orchestrator.addObserver(resultDisplayer);
     }
 
 
@@ -29,14 +37,6 @@ public class CLI  {
     }
 
     public void process(String expression){
-
-        Operation operation = new Operation();
-        rpn.ConcretObserve.Token token = new Token();
-        ResultDisplayer resultDisplayer = new ResultDisplayer();
-
-        orchestrator.addObserver(operation);
-        orchestrator.addObserver(token);
-        orchestrator.addObserver(resultDisplayer);
 
 
         for(String value : expression.split("\\s+")) {
