@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceaba7e2-feb6-456b-98f5-c0acc1c3287c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/rpn/Res/Tokenizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rpn/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpn/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +26,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CLI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CLI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpn/CLI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+            <state relative-caret-position="303">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CLITest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rpn/CLITest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2085">
+              <caret line="139" column="58" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2977#2978#0" expanded="true" />
+                <element signature="e#3014#3015#0" expanded="true" />
+                <element signature="e#2291#2292#0" expanded="true" />
+                <element signature="e#2331#2332#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tokenizer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Res/Tokenizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,15 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperationEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Event/OperationEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ResultEvent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Event/ResultEvent.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,22 +123,10 @@
       <file leaf-file-name="ResultDisplayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rpn/ConcretObserve/ResultDisplayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="345">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TokenEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Event/TokenEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-              <folding>
-                <element signature="e#545#546#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/java/rpn/Event/IEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Observe/Observable.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Observe/Observer.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/ConcretObserve/Operation.java" />
@@ -167,9 +176,11 @@
         <option value="$PROJECT_DIR$/src/main/java/rpn/Event/ResultEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Event/TokenEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/Res/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rpn/CLI.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/ConcretObserve/Orchestrator.java" />
         <option value="$PROJECT_DIR$/src/main/java/rpn/ConcretObserve/ResultDisplayer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rpn/CLITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rpn/CLI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rpn/Res/Tokenizer.java" />
       </list>
     </option>
   </component>
@@ -204,7 +215,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,6 +309,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -507,23 +518,15 @@
       <workItem from="1528365444622" duration="8865000" />
       <workItem from="1528556129533" duration="24000" />
       <workItem from="1528622337599" duration="19000" />
-      <workItem from="1528719514094" duration="286000" />
+      <workItem from="1528719514094" duration="449000" />
+      <workItem from="1528805791748" duration="336000" />
+      <workItem from="1528806243343" duration="584000" />
+      <workItem from="1529004054921" duration="9000" />
+      <workItem from="1529004092453" duration="1076000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CLITest - 2018.04.10 at 19h 13m 49s.xml">
-      <configuration name="CLITest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLITest_should_evaluate_operation_with_negatives - 2018.04.10 at 19h 15m 24s.xml">
-      <configuration name="CLITest.should_evaluate_operation_with_negatives" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLITest_should_evaluate_operation_with_negatives_and_decimals - 2018.04.10 at 19h 15m 50s.xml">
-      <configuration name="CLITest.should_evaluate_operation_with_negatives_and_decimals" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLITest_should_ignore_when_operators_exceed - 2018.04.10 at 19h 16m 34s.xml">
-      <configuration name="CLITest.should_ignore_when_operators_exceed" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CLITest_should_clean_and_calculate_when_fancy_expression - 2018.04.10 at 19h 17m 39s.xml">
       <configuration name="CLITest.should_clean_and_calculate_when_fancy_expression" configurationId="JUnit" />
     </history-entry>
@@ -542,9 +545,21 @@
     <history-entry file="CLITest - 2018.06.07 at 15h 33m 03s.xml">
       <configuration name="CLITest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CLITest - 2018.06.11 at 14h 29m 53s.xml">
+      <configuration name="CLITest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLITest - 2018.06.14 at 21h 34m 03s.xml">
+      <configuration name="CLITest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLITest - 2018.06.14 at 21h 35m 27s.xml">
+      <configuration name="CLITest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLITest - 2018.06.14 at 21h 37m 50s.xml">
+      <configuration name="CLITest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46911000" />
+    <option name="totallyTimeSpent" value="49079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="21" y="38" width="1629" height="865" extended-state="0" />
@@ -552,6 +567,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32996207" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -559,11 +575,11 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32996207" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32996207" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19521178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19521178" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -573,7 +589,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39949432" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32996207" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -592,20 +607,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/rpn/CLITest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2008#2009#0" expanded="true" />
-            <element signature="e#2044#2045#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Token.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Operation.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Res/Operator.java">
@@ -767,20 +768,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Observer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Observe.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/ConcretObserve.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/rpn/CLITest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2008#2009#0" expanded="true" />
-            <element signature="e#2044#2045#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -798,9 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,7 +865,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/ConcretObserve/ResultDisplayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="345">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -889,10 +873,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rpn/CLITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="139" column="58" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2977#2978#0" expanded="true" />
+            <element signature="e#3014#3015#0" expanded="true" />
+            <element signature="e#2291#2292#0" expanded="true" />
+            <element signature="e#2331#2332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rpn/CLI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+        <state relative-caret-position="303">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rpn/Res/Tokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
